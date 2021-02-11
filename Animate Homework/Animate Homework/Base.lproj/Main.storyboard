@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animate_Homework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="NcI-QW-geJ">
+                                <rect key="frame" x="63.5" y="627" width="248" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="Zmu-ze-f3Q"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="widthSliderChangedValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="ta1-R7-H5w"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="28b-8Z-trM">
+                                <rect key="frame" x="289" y="318.5" width="132" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="6du-Ms-aCb"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.transform.rotation.z" value="-1.570795"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="heighSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="HnV-I2-2jD"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bv-TV-dOF">
+                                <rect key="frame" x="50" y="10" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4hL-Iz-PT6"/>
+                                    <constraint firstAttribute="width" constant="40" id="NVT-ow-qFd"/>
+                                </constraints>
+                                <state key="normal">
+                                    <imageReference key="image" image="chevron.up.square.fill" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAL-YS-Iwp">
+                                <rect key="frame" x="10" y="45" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Rxv-XU-IjM"/>
+                                    <constraint firstAttribute="width" constant="40" id="rMm-rN-GPX"/>
+                                </constraints>
+                                <state key="normal">
+                                    <imageReference key="image" image="chevron.left.square.fill" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmt-tE-zSt">
+                                <rect key="frame" x="90" y="45" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="dd6-h5-7Oi"/>
+                                    <constraint firstAttribute="height" constant="40" id="peU-LM-ctc"/>
+                                </constraints>
+                                <state key="normal">
+                                    <imageReference key="image" image="chevron.right.square.fill" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0M-tj-7hg">
+                                <rect key="frame" x="50" y="80" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="FVY-XB-GLq"/>
+                                    <constraint firstAttribute="height" constant="40" id="ctQ-r8-dGa"/>
+                                </constraints>
+                                <state key="normal">
+                                    <imageReference key="image" image="chevron.down.square.fill" catalog="system" symbolScale="default"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="JCV-21-yrf">
+                                <rect key="frame" x="65.5" y="269.5" width="244" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="244" id="1pB-Vc-ZdQ"/>
+                                    <constraint firstAttribute="height" constant="128" id="3Xn-EM-NW7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JCV-21-yrf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2dY-So-93P"/>
+                            <constraint firstAttribute="bottom" secondItem="NcI-QW-geJ" secondAttribute="bottom" constant="10" id="4Xh-cV-U5W"/>
+                            <constraint firstItem="28b-8Z-trM" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" constant="44" id="A1F-bf-cdu"/>
+                            <constraint firstItem="28b-8Z-trM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DQm-n4-HwB"/>
+                            <constraint firstItem="9bv-TV-dOF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="QP7-aH-djl"/>
+                            <constraint firstItem="GAL-YS-Iwp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="S0k-zJ-IhR"/>
+                            <constraint firstItem="jmt-tE-zSt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Zup-xP-h7H"/>
+                            <constraint firstItem="jmt-tE-zSt" firstAttribute="leading" secondItem="GAL-YS-Iwp" secondAttribute="trailing" constant="40" id="aF2-kk-eeh"/>
+                            <constraint firstItem="JCV-21-yrf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fu0-zl-SGV"/>
+                            <constraint firstItem="i0M-tj-7hg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="h2y-mu-BEg"/>
+                            <constraint firstItem="9bv-TV-dOF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="heM-iJ-5kU"/>
+                            <constraint firstItem="i0M-tj-7hg" firstAttribute="top" secondItem="9bv-TV-dOF" secondAttribute="bottom" constant="30" id="j7h-gq-LMZ"/>
+                            <constraint firstItem="GAL-YS-Iwp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="r4c-Qb-AxS"/>
+                            <constraint firstItem="NcI-QW-geJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vJT-2T-GYc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="downButton" destination="i0M-tj-7hg" id="8N9-Ge-CLw"/>
+                        <outlet property="heightConstraint" destination="3Xn-EM-NW7" id="kbB-cu-xhu"/>
+                        <outlet property="heightSlider" destination="28b-8Z-trM" id="V97-xH-hOR"/>
+                        <outlet property="horizontalConstraint" destination="2dY-So-93P" id="rV7-uU-zab"/>
+                        <outlet property="leftButton" destination="GAL-YS-Iwp" id="VGc-t0-K16"/>
+                        <outlet property="rightButton" destination="jmt-tE-zSt" id="0VI-wu-Yft"/>
+                        <outlet property="upButton" destination="9bv-TV-dOF" id="jsk-wo-4zo"/>
+                        <outlet property="verticalConstraint" destination="fu0-zl-SGV" id="sGk-fV-u7p"/>
+                        <outlet property="viewForAnimation" destination="JCV-21-yrf" id="d2s-lz-s1d"/>
+                        <outlet property="widthConstraint" destination="1pB-Vc-ZdQ" id="MEr-xU-0yO"/>
+                        <outlet property="widthSlider" destination="NcI-QW-geJ" id="z7D-P7-I8B"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="54" y="146"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.down.square.fill" catalog="system" width="128" height="114"/>
+        <image name="chevron.left.square.fill" catalog="system" width="128" height="114"/>
+        <image name="chevron.right.square.fill" catalog="system" width="128" height="114"/>
+        <image name="chevron.up.square.fill" catalog="system" width="128" height="114"/>
+        <image name="wallpaper" width="1927" height="1280"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
